@@ -11,6 +11,11 @@
 		2C6B819B2B0EA0C1004162F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6B819A2B0EA0C1004162F9 /* ContentView.swift */; };
 		2C6B819D2B0EA0C3004162F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C6B819C2B0EA0C3004162F9 /* Assets.xcassets */; };
 		2C6B81A02B0EA0C3004162F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C6B819F2B0EA0C3004162F9 /* Preview Assets.xcassets */; };
+		2C6B81A72B0EA119004162F9 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6B81A62B0EA119004162F9 /* HealthManager.swift */; };
+		2C6B81A92B0EA14C004162F9 /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6B81A82B0EA14C004162F9 /* RingView.swift */; };
+		2C6B81AB2B0EA1D7004162F9 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6B81AA2B0EA1D7004162F9 /* SummaryView.swift */; };
+		2C6B81AD2B0EA21A004162F9 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6B81AC2B0EA21A004162F9 /* ChartView.swift */; };
+		2C6B81B12B0F3CA4004162F9 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 2C6B81B02B0F3CA4004162F9 /* SwiftUICharts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		2C6B819A2B0EA0C1004162F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2C6B819C2B0EA0C3004162F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C6B819F2B0EA0C3004162F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2C6B81A62B0EA119004162F9 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
+		2C6B81A82B0EA14C004162F9 /* RingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
+		2C6B81AA2B0EA1D7004162F9 /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
+		2C6B81AC2B0EA21A004162F9 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		2C6B81AE2B0F3A94004162F9 /* FitLess.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FitLess.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C6B81B12B0F3CA4004162F9 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +62,15 @@
 		2C6B81972B0EA0C1004162F9 /* FitLess */ = {
 			isa = PBXGroup;
 			children = (
+				2C6B81AE2B0F3A94004162F9 /* FitLess.entitlements */,
 				2C6B81982B0EA0C1004162F9 /* FitLessApp.swift */,
 				2C6B819A2B0EA0C1004162F9 /* ContentView.swift */,
 				2C6B819C2B0EA0C3004162F9 /* Assets.xcassets */,
 				2C6B819E2B0EA0C3004162F9 /* Preview Content */,
+				2C6B81A62B0EA119004162F9 /* HealthManager.swift */,
+				2C6B81A82B0EA14C004162F9 /* RingView.swift */,
+				2C6B81AA2B0EA1D7004162F9 /* SummaryView.swift */,
+				2C6B81AC2B0EA21A004162F9 /* ChartView.swift */,
 			);
 			path = FitLess;
 			sourceTree = "<group>";
@@ -83,6 +99,9 @@
 			dependencies = (
 			);
 			name = FitLess;
+			packageProductDependencies = (
+				2C6B81B02B0F3CA4004162F9 /* SwiftUICharts */,
+			);
 			productName = FitLess;
 			productReference = 2C6B81952B0EA0C1004162F9 /* FitLess.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +130,9 @@
 				Base,
 			);
 			mainGroup = 2C6B818C2B0EA0C1004162F9;
+			packageReferences = (
+				2C6B81AF2B0F3CA4004162F9 /* XCRemoteSwiftPackageReference "SwiftUICharts" */,
+			);
 			productRefGroup = 2C6B81962B0EA0C1004162F9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +160,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C6B819B2B0EA0C1004162F9 /* ContentView.swift in Sources */,
+				2C6B81A92B0EA14C004162F9 /* RingView.swift in Sources */,
+				2C6B81AB2B0EA1D7004162F9 /* SummaryView.swift in Sources */,
+				2C6B81A72B0EA119004162F9 /* HealthManager.swift in Sources */,
 				2C6B81992B0EA0C1004162F9 /* FitLessApp.swift in Sources */,
+				2C6B81AD2B0EA21A004162F9 /* ChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,12 +295,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FitLess/FitLess.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FitLess/Preview Content\"";
 				DEVELOPMENT_TEAM = CS786L2XRU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Please allow access to enjoy all the feature of the app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -298,12 +326,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FitLess/FitLess.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FitLess/Preview Content\"";
 				DEVELOPMENT_TEAM = CS786L2XRU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Please allow access to enjoy all the feature of the app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -344,6 +374,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2C6B81AF2B0F3CA4004162F9 /* XCRemoteSwiftPackageReference "SwiftUICharts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/willdale/SwiftUICharts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2C6B81B02B0F3CA4004162F9 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C6B81AF2B0F3CA4004162F9 /* XCRemoteSwiftPackageReference "SwiftUICharts" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2C6B818D2B0EA0C1004162F9 /* Project object */;
 }
